@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulario</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body bgcolor="black">
+    <h1 style="color: darkred;">Calcular la suma de dos numeros</h1>
+    <form action="">
+        <label for="n1" style="color: white;">Numero 1</label>
+        <input type="text" id="n1">
+        <label for="n2" style="color: white;">Numero 2</label>
+        <input type="text" id="n2">
+        <input type="button" value="Calcular" onclick="suma(n1.value,n2.value)">
+        <div id="resultadoSuma"></div>
+        
+    </form>
+    <h1 style="color: green;">Calcular la resta</h1>
+    <form action="">
+        <label for="nr1" style="color: orange;">Numero 1</label>
+        <input type="number" id="nr1"><br>
+        <label for="nr2" style="color: orange;">Numero 2</label>
+        <input type="number" id="nr2"><br>
+        <input type="button" value="Calcular" onclick="resta(nr1.value,nr2.value)">
+        <div id="reresta"></div>
+    </form>
+    <h1 style="color: green;">Calcular la multiplicación</h1>
+    <form action="">
+        <label for="nm1" style="color: orange;">Numero 1</label>
+        <input type="number" id="nm1"><br>
+        <label for="nm2" style="color: orange;">Numero 2</label>
+        <input type="number" id="nm2"><br>
+        <input type="button" value="Calcular" onclick="multiplicacion(nm1.value,nm2.value)">
+        <div id="remulti"></div>
+    </form>
+    <h1 style="color: green;">Calcular la division</h1>
+    <form action="">
+        <label for="nd1" style="color: orange;">Numero 1</label>
+        <input type="number" id="nd1"><br>
+        <label for="nd2" style="color: orange;">Numero 2</label>
+        <input type="number" id="nd2"><br>
+        <input type="button" value="Calcular" onclick="division(nd1.value,nd2.value)">
+        <div id="redivi"></div>
+    </form>
+    <script src="js/formulario.js"></script>
+</body>
+</html>
